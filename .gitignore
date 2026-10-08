@@ -1,18 +1,23 @@
-# Dependencies
-node_modules/
-.pnpm-store/
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
 
-# Next.js
-.next/
-out/
-
-# Next.js generated files
-next-env.d.ts
+# Vercel
+.vercel/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+next-env.d.ts
 
 # Python
 __pycache__/
@@ -20,14 +25,15 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Python virtual environment
-backend/venv/
+# Python virtual environments
 venv/
+backend/venv/
 
-# SQLite database
-backend/*.db
+# SQLite databases
+*.db
 *.sqlite
 *.sqlite3
+backend/*.db
 
 # Logs
 *.log
@@ -38,7 +44,3 @@ backend/*.db
 # IDE
 .vscode/
 .idea/
-
-# Temporary files
-*.tmp
-*.temp
